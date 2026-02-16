@@ -11,6 +11,7 @@ import twentythree from "../../public/twentythree.jpg";
 import twentyfour from "../../public/twentyfour.jpg";
 import twentyfive from "../../public/twentyfive.jpg";
 import twentysix from "../../public/twentysix.jpg";
+import thirty from "../../public/thirty.jpg";
 import twentyseven from "../../public/twentyseven.jpg";
 import twentyeight from "../../public/twentyeight.jpg";
 import twentynine from "../../public/twentynine.jpg";
@@ -135,7 +136,11 @@ const LandingPage = () => {
       {/* Navigation */}
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-container">
-          <Link to="/" className="logo">
+          <Link to="/" className="logo" style={{display:"flex", flexDirection:"row"}}>
+            <img 
+            src={thirty}
+            style={{width:"60px", height:"40px"}}
+            />
             LAYLA'S<span>KITCHEN</span>
           </Link>
 
@@ -147,11 +152,11 @@ const LandingPage = () => {
 
           <div className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
             <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-            <Link to="/menu" onClick={() => setMobileMenuOpen(false)}>Menu</Link>
-            <Link to="/about" onClick={() => setMobileMenuOpen(false)}>About</Link>
-            <Link to="/gallery" onClick={() => setMobileMenuOpen(false)}>Gallery</Link>
+            <Link onClick={() => setMobileMenuOpen(false)}>Menu</Link>
+            <Link onClick={() => setMobileMenuOpen(false)}>About</Link>
+            <Link onClick={() => setMobileMenuOpen(false)}>Gallery</Link>
             <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
-            <Link to="/reserve" className="reserve-btn" onClick={() => setMobileMenuOpen(false)}>Reserve Table</Link>
+            <Link className="reserve-btn" onClick={() => setMobileMenuOpen(false)}>Reserve Table</Link>
           </div>
         </div>
       </nav>
@@ -169,8 +174,8 @@ const LandingPage = () => {
             From our kitchen to your table, every dish tells a story.
           </p>
           <div className="hero-buttons">
-            <Link to="/menu" className="btn-primary">Explore Menu</Link>
-            <Link to="/reserve" className="btn-secondary">Reserve Table</Link>
+            <Link to="/products" className="btn-primary">Explore Products</Link>
+            <Link className="btn-secondary">Reserve Table</Link>
           </div>
         </div>
       </section>

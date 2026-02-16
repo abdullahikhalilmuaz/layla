@@ -387,27 +387,6 @@ const products = [
     badge: 'chef'
   },
   {
-    id: 27,
-    name: 'Sisi Yemi Special',
-    description: 'Signature mixed platter with rice, chicken, and sides',
-    price: '₦8,500',
-    category: 'Rice',
-    tags: ['Premium', 'Combo', 'Signature'],
-    rating: 5.0,
-    reviews: 55,
-    image: twentyseven,
-    chef: {
-      name: 'Chef Layla',
-      role: 'Head Chef',
-      specialty: 'Jollof Rice Specialist',
-      experience: '10 years',
-      image: twentyseven,
-      whatsapp: '+2347075607597',
-      message: 'Hello Chef Layla, I would like to order the Sisi Yemi Special'
-    },
-    badge: 'premium'
-  },
-  {
     id: 28,
     name: 'Jollof Rice (Packaged)',
     description: 'Jollof Rice',

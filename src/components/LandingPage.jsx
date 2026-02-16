@@ -12,9 +12,11 @@ import twentyfour from "../../public/twentyfour.jpg";
 import twentyfive from "../../public/twentyfive.jpg";
 import twentysix from "../../public/twentysix.jpg";
 import thirty from "../../public/thirty.jpg";
+import fifteen from "../../public/fifteen.jpg";
 import twentyseven from "../../public/twentyseven.jpg";
 import twentyeight from "../../public/twentyeight.jpg";
 import twentynine from "../../public/twentynine.jpg";
+import sixteen from "../../public/sixteen.jpg";
 
 const LandingPage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -40,17 +42,17 @@ const LandingPage = () => {
 
   const featuredDishes = [
     {
-      name: 'Grilled Jollof Rice',
-      description: 'Smoky grilled rice with spicy tomato sauce, served with plantains',
-      price: '₦4,500',
+      name: 'Chinchin',
+      description: 'Flavoured Chinchin',
+      price: '₦1,500',
       tag: 'Popular',
       image: nineteen
     },
     {
-        name: 'Suya Supreme',
-        description: 'Spicy grilled beef skewers with yaji spice and onions',
-        price: '₦6,200',
-        tag: 'Signature',
+        name: 'Tuwon Madara',
+        description: 'Flavoured Tuwon Madara',
+        price: '₦1,000 & 500',
+        tag: 'Snack',
         image: seventeen
     },
     {
@@ -85,32 +87,32 @@ const LandingPage = () => {
 
   const menuItems = {
     popular: [
-      { name: 'Jollof Rice Special', description: 'Classic Nigerian jollof with chicken', price: '₦3,500', image: 'https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80', tags: ['Popular', 'Rice'] },
-      { name: 'Suya Skewers', description: 'Spicy grilled beef with yaji', price: '₦2,500', image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80', tags: ['Grill', 'Beef'] },
-      { name: 'Moi Moi', description: 'Steamed bean pudding with fish', price: '₦1,500', image: 'https://images.unsplash.com/photo-1546549032-9571cd6b27df?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80', tags: ['Protein', 'Vegetarian'] },
-      { name: 'Plantain Chips', description: 'Crispy fried plantain', price: '₦1,200', image: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80', tags: ['Snack', 'Vegan'] }
+      { name: 'Kosae', description: 'Classic Nigerian Kosar for breakfast', price: 'On Order', image: twentynine, tags: ['Popular', 'Rice'] },
+      { name: 'Aya', description: 'Flavoured Aya', price: '₦1,000', image: twentyone, tags: ['Grill', 'Beef'] },
+      { name: 'Doughnut', description: 'Soft Doughnut', price: 'On Order', image: fifteen , tags: ['Snack', 'Vegetarian'] },
+      { name: 'Super Package', description: '', price: '₦1,200', image: sixteen, tags: ['Snack', 'Vegan'] }
     ],
     traditional: [
-      { name: 'Egusi Soup', description: 'Melon seed soup with ugwu', price: '₦3,800', image: 'https://images.unsplash.com/photo-1546549032-9571cd6b27df?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80', tags: ['Traditional', 'Soup'] },
-      { name: 'Oha Soup', description: 'Traditional igbo soup', price: '₦4,200', image: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80', tags: ['Traditional', 'Soup'] },
-      { name: 'Banga Soup', description: 'Palm nut soup', price: '₦4,000', image: 'https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80', tags: ['Traditional', 'Soup'] }
+        { name: 'Doughnut', description: 'Soft Doughnut', price: 'On Order', image: fifteen , tags: ['Snack', 'Vegetarian'] },
+        { name: 'Super Package', description: '', price: '₦1,200', image: sixteen, tags: ['Snack', 'Vegan'] },
+        { name: 'Aya', description: 'Flavoured Aya', price: '₦1,000', image: twentyone, tags: ['Grill', 'Beef'] },
     ],
     grill: [
-      { name: 'Grilled Fish', description: 'Fresh tilapia with spices', price: '₦5,500', image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80', tags: ['Grill', 'Seafood'] },
-      { name: 'Chicken Suya', description: 'Spicy grilled chicken', price: '₦3,800', image: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80', tags: ['Grill', 'Chicken'] },
-      { name: 'Grilled Prawns', description: 'Jumbo prawns with butter', price: '₦6,500', image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80', tags: ['Grill', 'Seafood'] }
+        { name: 'Doughnut', description: 'Soft Doughnut', price: 'On Order', image: fifteen , tags: ['Snack', 'Vegetarian'] },
+        { name: 'Aya', description: 'Flavoured Aya', price: '₦1,000', image: twentyone, tags: ['Grill', 'Beef'] },
+        { name: 'Kosae', description: 'Classic Nigerian Kosar for breakfast', price: 'On Order', image: twentynine, tags: ['Popular', 'Rice'] },
     ]
   };
 
   const galleryImages = [
-    'https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-    'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-    'https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-    'https://images.unsplash.com/photo-1546549032-9571cd6b27df?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-    'https://images.unsplash.com/photo-1547928576-8227411c8c3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-    'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-    'https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-    'https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
+    seventeen,
+    eighteen,
+    nineteen,
+    twenty,
+    twentyone,
+    twentytwo,
+    twentythree,
+    twentyfour,
   ];
 
   const testimonials = [
@@ -449,7 +451,7 @@ const LandingPage = () => {
           <div className="footer-column">
             <h4>Contact Info</h4>
             <div className="contact-info">
-              <p>📍 Unwala <br/> II, Katsina, Nigeria</p>
+              <p>📍 Unwala <br/> KTIT, Katsina, Nigeria</p>
               <p>📞 +234 707 (560) 75 97 </p>
               <p>✉️ zainababubakar021@gmail.com</p>
             </div>

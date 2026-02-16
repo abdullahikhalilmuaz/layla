@@ -154,11 +154,10 @@ const LandingPage = () => {
 
           <div className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
             <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-            <Link onClick={() => setMobileMenuOpen(false)}>Menu</Link>
-            <Link onClick={() => setMobileMenuOpen(false)}>About</Link>
-            <Link onClick={() => setMobileMenuOpen(false)}>Gallery</Link>
+            <Link to="/about" onClick={() => setMobileMenuOpen(false)}>About</Link>
+            <Link to="/gallery" onClick={() => setMobileMenuOpen(false)}>Gallery</Link>
             <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
-            <Link className="reserve-btn" onClick={() => setMobileMenuOpen(false)}>Reserve Table</Link>
+            <Link to="/product" className="reserve-btn" onClick={() => setMobileMenuOpen(false)}>Menu</Link>
           </div>
         </div>
       </nav>
